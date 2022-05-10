@@ -4,7 +4,7 @@ This is the final project from the [Learn HTML – Full Tutorial for Beginners (
 
 ## Live demo
 
-- Check out the live [example](https://dimmageiras.github.io/101-computing-sliding-puzzle).
+- Check out the live [example](https://dimmageiras.github.io/HTML-project--with-some-CSS-/).
 
 ## Author
 
