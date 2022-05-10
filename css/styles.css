@@ -3,8 +3,9 @@ html {
 }
 
 body {
-	border-left: 1px solid hsl(0 0% 20%);
-	border-right: 1px solid hsl(0 0% 20%);
+	background-color: hsl(51, 100%, 97%);
+	border-left: 1px solid hsl(0, 0%, 20%);
+	border-right: 1px solid hsl(0, 0%, 20%);
 	margin: 0 auto;
 	max-width: 36.5rem;
 	min-height: 100vh;
@@ -57,12 +58,31 @@ main > article {
 	width: 100%;
 }
 
+.menuTitle,
+.menuHeader,
 .menuItem {
-	border: 1px solid hsl(0 0% 20%);
+	border: 1px solid hsl(0, 0%, 20%);
 	font-family: "Courier New", Courier, monospace;
 	border-collapse: separate;
 	padding: 0.5rem;
 	text-align: center;
+}
+
+.menuTitle,
+.menuFooter .menuHeader {
+	background-color: hsl(51, 100%, 52%);
+}
+
+.menuHeader:not(tfoot .menuHeader) {
+	background-color: hsl(165, 44%, 52%);
+}
+
+.menuItem:not(tfoot .menuItem) {
+	background-color: hsl(165, 44%, 88%);
+}
+
+.menuFooter .menuItem {
+	background-color: hsl(51, 100%, 79%);
 }
 
 main > section {
@@ -91,7 +111,7 @@ form {
 	width: 100%;
 }
 
-.formLabel {
+.formLabel:not(:last-of-type) {
 	display: inline-block;
 	width: 2.65rem;
 }
