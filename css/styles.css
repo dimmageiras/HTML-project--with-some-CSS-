@@ -7,17 +7,21 @@ body {
 	border-left: 1px solid hsl(0, 0%, 20%);
 	border-right: 1px solid hsl(0, 0%, 20%);
 	margin: 0 auto;
-	max-width: 36.5rem;
+	max-width: 100%;
 	min-height: 100vh;
-	padding: 1rem;
+	padding: 1rem 0;
+	width: 36.5rem;
 }
 
-body,
-hr,
+body {
+	min-width: 15rem;
+}
+
 header,
 main,
 footer {
 	min-width: 15rem;
+	padding: 0 1rem;
 }
 
 header {
@@ -50,6 +54,12 @@ header {
 
 main > article {
 	padding: 1rem 0;
+}
+
+main > hr {
+	position: relative;
+	left: -1rem;
+	width: calc(100% + 2rem);
 }
 
 #menu .menu {
@@ -127,4 +137,24 @@ form {
 
 footer {
 	padding-top: 1rem;
+}
+
+@media screen and (max-width: 360px) {
+	body {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	header,
+	main,
+	footer {
+		padding: 0 0.5rem;
+	}
+
+	main > hr {
+		position: relative;
+		left: -0.5rem;
+		width: calc(100% + 1rem);
+	}
 }
